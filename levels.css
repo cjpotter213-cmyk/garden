@@ -1,0 +1,124 @@
+#level-1 {
+  display: grid;
+  grid: repeat(3, 1fr) / repeat(2, 1fr);
+}
+
+#level-2 {
+  display: grid;
+  grid: repeat(3, 1fr) / repeat(2, 1fr);
+}
+
+section#level-2 > p.peas {
+  grid-column: 1 / 3;
+}
+
+#level-3 {
+  display: grid;
+  grid: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+section#level-3 > p.onions {
+  grid-column: 2 / -1;
+}
+
+section#level-3 > p.tomatoes {
+  grid-column: 1 / 3;
+}
+
+section#level-3 > p.carrots {
+  grid-column: 1/-1;
+}
+
+#level-4 {
+  display: grid;
+  grid: repeat(2, 1fr) / repeat(4, 1fr);
+}
+
+section#level-4 > p.peas {
+  grid-column: 1 / 3;
+}
+
+section#level-4 > p.onions {
+  grid-column: 3 / 4;
+  grid-row: 1 / -1;
+}
+
+section#level-4 > p.carrots {
+  grid-column: 4 / 5;
+  grid-row: 1 / -1;
+}
+
+#level-5 {
+  display: grid;
+  grid: repeat(3, 1fr) / repeat(5, 1fr);
+}
+
+section#level-5 > p.carrots {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+section#level-5 > p.onions {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+
+section#level-5 > p.lettuce {
+  grid-column: 5 / 6;
+}
+
+section#level-5 > p.peas {
+  grid-column: 4 /-1;
+  grid-row: 2 / 3;
+}
+
+section#level-5 > p.tomatoes {
+  grid-column: 2/ 5;
+  grid-row: 3 / 4;
+}
+
+#level-6 {
+  display: grid;
+  grid: repeat(4, 1fr) / repeat(5, 1fr);
+}
+
+section#level-6 > p.carrots {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+section#level-6 > p.onions {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+
+section#level-6 > p.peas {
+  grid-column: 2 / 5;
+  grid-row: 2 / 4;
+}
+
+section#level-6 > p.tomatoes {
+  grid-column: 5 / 6;
+  grid-row: 2 / 4;
+}
+
+section#level-6 > p.lettuce {
+  grid-column: 1 / -1;
+}
+
+#level-7 {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(5ch, 1fr));
+}
+
+#level-8 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 15ch);
+  grid-auto-rows: 5ch;
+}
+
+#level-9 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-auto-rows: 5rem;
+}
